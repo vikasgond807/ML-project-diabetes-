@@ -31,9 +31,9 @@ X_train,X_test,y_train,y_test=train_test_split(X,y,random_state=0,test_size=0.2)
 
 
 # Feature scaling
-sc_x=StandardScaler()
-X_train=sc_x.fit_transform(X_train)
-X_test=sc_x.transform(X_test)
+sc=StandardScaler()
+X_train=sc.fit_transform(X_train)
+X_test=sc.transform(X_test)
 
 
 #using KNeighborsClassifier for building the model
